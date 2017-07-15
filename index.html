@@ -2,68 +2,9 @@
 <!-- saved from url=(0023)http://www.remejai.lt/ -->
 <html lang="lt" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link rel="alternate" hreflang="lt" href="http://www.remejai.lt"/>
-	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/component.css?v=26" />
-	<link rel="stylesheet" type="text/css" href="assets/content.css?v=26" />
-	<link rel="stylesheet" type="text/css" href="assets/style.css?v=26"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="description" content="Rėmėjai / Ieškantys rėmėjų"/>
-	<meta property="og:description" content="Mūsų puslapis skirtas būtent tiems kurie turi svajonių ir nori jas realizuoti, taip pat tiems kurie nori save tobulinti ar tiesiog noretu pasiulyti savo paslaugas."/>
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="shortcut icon" href="http://www.remejai.lt/img/remejai.ico" type="image/x-icon">
-	<link rel="alternate" href="<?php echo 'http://www.remejai.lt'.$_SERVER['REQUEST_URI']; ?>" hreflang="lt"/>
-	<meta property="og:url" content="<?php echo 'http://www.remejai.lt'.$_SERVER['REQUEST_URI']; ?>" />
-	<meta property="og:image" content="http://www.remejai.lt/img/fb-remejai.png"/>
-	<meta property="og:title" content="Rėmėjai / Ieškantys rėmėjų"/>
-	<meta property="og:site_name" content="Remejai.lt"/>
-	<meta property="og:type" content="website"/>
-	<meta name="author" lang="lt" content="Rėmėjai"/>
-	<meta name="application-name" content="remejai.lt"/>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="js/modernizr.custom.js?v=9"></script>
-	<title>Rėmėjai / Ieškantys rėmėjų</title>	
+	
 </head>
 <body>
-
-	<?php echo show_topbar_html("", $mysqli); ?>
-	
-	<div class="banner">
-		<div class="main-container-sponsors">
-			<div class="container">
-				<h2>Rėmėjai / Ieškantys rėmėjų</h2>
-				<p>Kartu mes galim daugiau!</p>
-				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="GET">
-					<input class="search-input-text" placeholder="Tekstinė paieška" name="text" maxlength="45" value="<?php echo $text_fam; ?>">
-					<input type="submit" class="search" style="vertical-align:middle;" value="Ieškoti">
-				</form>
-			</div>
-			<div class="container cf">
-
-				<?php echo $display_sponsors_ads; ?>
-
-			</div>
-		<?php echo pages($page, $rows_count/$show_rows, "http://www.remejai.lt/remejai",1); ?>
-		</div>
-	</div>
-	
-	<?php echo show_meniu_html("", $mysqli); ?>
-	
-	<div class="footer">
-		<div class="features">
-			<div class="more">
-				<?php echo footer_text("http://www.remejai.lt/"); ?>
-			</div>
-		</div>
-	</div>
-
-	<script src="js/classie.js?v=9"></script>
-	<script src="js/uiMorphingButton_fixed.js?v=9"></script>
-	<script>var $animation_elements=$('.animation-element');var $window=$(window);function check_if_in_view(){var window_height=$window.height();var window_top_position=$window.scrollTop();var window_bottom_position=(window_top_position+window_height);$.each($animation_elements,function(){var $element=$(this);var element_height=$element.outerHeight();var element_top_position=$element.offset().top;var element_bottom_position=(element_top_position+element_height);if((element_bottom_position>=window_top_position)&&(element_top_position<=window_bottom_position)){$element.addClass('in-view')}else{$element.removeClass('in-view')}})}$window.on('scroll resize',check_if_in_view);$window.trigger('scroll');</script>
-	<script src="js/sponsors_1.0.js?v=9"></script>
-	<?php echo isset($_SESSION['user_id']) ? '<script src="js/logged.js?v=9"></script>' : '<script src="js/not-logged.js?v=9"></script>'; ?>
-	<?php include_once("trackingcode/analyticstracking.php") ?>
+	<p>Hello</p>
 </body>
 </html>
